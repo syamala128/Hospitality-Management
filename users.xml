@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <id>1</id>
+        <name>John Doe</name>
+        <email>john.doe@example.com</email>
+        <age>30</age>
+    </user>
+    <user>
+        <id>2</id>
+        <name>Jane Smith</name>
+        <email>jane.smith@example.com</email>
+        <age>25</age>
+    </user>
+    <user>
+        <id>3</id>
+        <name>Michael Johnson</name>
+        <email>michael.johnson@example.com</email>
+        <age>35</age>
+    </user>
+    <user>
+        <id>4</id>
+        <name>Emily Davis</name>
+        <email>emily.davis@example.com</email>
+        <age>28</age>
+    </user>
+    <user>
+        <id>5</id>
+        <name>David Wilson</name>
+        <email>david.wilson@example.com</email>
+        <age>32</age>
+    </user>
+    <user>
+        <id>6</id>
+        <name>Linda Martinez</name>
+        <email>linda.martinez@example.com</email>
+        <age>29</age>
+    </user>
+    <user>
+        <id>7</id>
+        <name>James Brown</name>
+        <email>james.brown@example.com</email>
+        <age>40</age>
+    </user>
+    <user>
+        <id>8</id>
+        <name>Patricia Taylor</name>
+        <email>patricia.taylor@example.com</email>
+        <age>27</age>
+    </user>
+    <user>
+        <id>9</id>
+        <name>Robert Anderson</name>
+        <email>robert.anderson@example.com</email>
+        <age>31</age>
+    </user>
+    <user>
+        <id>10</id>
+        <name>Jennifer Thomas</name>
+        <email>jennifer.thomas@example.com</email>
+        <age>26</age>
+    </user>
+</users>

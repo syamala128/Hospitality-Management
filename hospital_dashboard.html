@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background: url('bg2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 2%;
+        }
+
+        .dashboard-container {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            max-width: 350px;
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            font-size: 1.8em;
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-size: 1.1em;
+            color: black;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        ul li a:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Patient Portal</h1>
+        <ul>
+            <li><a href="list_of_patients.html">Recipient Inventory</a></li>
+<li><a href="patients.php">Care Consultant</a></li>
+ <li><a href="billing.php">Medical Charges</a></li>
+ <li><a href="insurance.php">Health Insurance</a></li>
+        </ul>
+    </div>
+</body>
+</html>

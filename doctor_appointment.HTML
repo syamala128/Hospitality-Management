@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background: url('bg2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            backdrop-filter: blur(8px);
+        }
+        .form-container h2 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-container input:focus, .form-container select:focus {
+            border-color: #4CAF50;
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .confirmation-message {
+            display: none;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px 50px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .confirmation-message h2 {
+            color: #2E8B57;
+            font-weight: bold;
+        }
+        .confirmation-message p {
+            color: #333;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+    </style>
+    <script>
+        function showConfirmation(event) {
+            event.preventDefault();
+            document.querySelector('.form-container').style.display = 'none';
+            document.querySelector('.confirmation-message').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Book an Appointment</h2>
+        <form onsubmit="showConfirmation(event)">
+            <label for="patientName">Your Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+            
+            <label for="mobileNo">Mobile No:</label>
+            <input type="text" id="mobileNo" name="mobileNo" required>
+            
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Select</option>
+                <option value="Dr. Abhi(Dermatology)">Dr. Abhi (Dermatology)</option>
+                <option value="Dr. Ashok Rajgopla(Dermatology)">Dr. Ashok Rajgopla (Dermatology)</option>
+                <option value="Dr. Rajesh(Cardiology)">Dr. Rajesh (Cardiology)</option>
+                <option value="Dr. Suresh Joshi(Cardiology)">Dr. Suresh Joshi (Cardiology)</option>
+            </select>
+            
+            <label for="appointmentDate">Preferred Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+            
+            <input type="submit" value="Book Appointment">
+        </form>
+    </div>
+    
+    <div class="confirmation-message">
+        <h2>Appointment Confirmed!</h2>
+        <p>Thank you for booking your appointment. Our team will contact you shortly with further details.</p>
+    </div>
+</body>
+</html>
